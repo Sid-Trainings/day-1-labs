@@ -233,4 +233,32 @@ Here’s a quick command to tag a VM (optional for advanced users):
 az resource tag \
   --tags team=sysadmin owner=aarav.jain env=test \
   --resource-id /subscriptions/<sub-id>/resourceGroups/northwind-rg/providers/Microsoft.Compute/virtualMachines/northwind-vm-web
+```
+---
 
+### 📸 Final Deliverables
+Include in your team’s submission:
+
+- Screenshot of Resource Group with all resources
+
+- Screenshot of IAM role assignments (or a table documenting them)
+
+- Summary note: Challenges faced and how you resolved them
+
+### 🧠 Tips for Admins
+- Stay in sync with all roles
+
+- Use the Azure CLI for quick tasks if comfortable
+
+- Be the escalation point in case others hit permissions issues
+
+### 🧪 Bonus (Optional Challenge)
+Try assigning RBAC roles using Azure CLI:
+```commandline
+az role assignment create \
+  --assignee <user-email-or-object-id> \
+  --role "Contributor" \
+  --scope "/subscriptions/<sub-id>/resourceGroups/<group-name>"
+
+```
+🔗 [← Back to Main Lab Guide](../README.md)
