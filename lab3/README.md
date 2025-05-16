@@ -17,8 +17,6 @@ Learn how to create and configure a Virtual Machine (VM) on Microsoft Azure usin
 2. Use the search bar to find **Virtual Machines**
 3. Click on **+ Create > Azure virtual machine**
 
-![Step 1 - Navigate to VMs](images/lab3_step1_vm_nav.png)
-
 ---
 
 ## 2️⃣ Configure Basic Settings
@@ -32,7 +30,6 @@ Learn how to create and configure a Virtual Machine (VM) on Microsoft Azure usin
    - **Size**: Select B1s (Free Tier eligible)
 2. Set up admin username and password or SSH key
 
-![Step 2 - VM Basic Settings](images/lab3_step2_vm_basics.png)
 
 ---
 
@@ -43,8 +40,6 @@ Learn how to create and configure a Virtual Machine (VM) on Microsoft Azure usin
    - SSH (22) for Linux
    - RDP (3389) for Windows
 
-![Step 3 - VM Networking](images/lab3_step3_vm_network.png)
-
 ---
 
 ## 4️⃣ Review and Create
@@ -52,8 +47,6 @@ Learn how to create and configure a Virtual Machine (VM) on Microsoft Azure usin
 1. Skip disks, management, monitoring, and advanced for now
 2. Click **Review + Create**
 3. Once validation passes, click **Create**
-
-![Step 4 - Review and Create](images/lab3_step4_review.png)
 
 ---
 
@@ -64,7 +57,6 @@ Learn how to create and configure a Virtual Machine (VM) on Microsoft Azure usin
    - **SSH** (for Linux) → copy and run in terminal
    - **RDP** (for Windows) → download RDP file and connect
 
-![Step 5 - VM Connection Options](images/lab3_step5_connect.png)
 
 ---
 
