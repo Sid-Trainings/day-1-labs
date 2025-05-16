@@ -11,61 +11,59 @@ Set up a virtual machine using Oracle VirtualBox and install Ubuntu. This lab co
 
 ---
 
-## 1️⃣ Download and Install VirtualBox
+## 1️⃣ Download and Install VMWare Workstation
 
-1. Visit [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
-2. Choose the installer for your operating system (Windows/Mac/Linux)
-3. Run the installer and complete the setup
-
-![Step 1 - VirtualBox Download](images/step1_virtualbox_download.png)
-![Step 2 - VirtualBox Install](images/step2_virtualbox_install.png)
+1. Go to the [Slack Channel](https://join.slack.com/t/iacsd-devopsworkshop/shared_invite/zt-35ykagbls-glqUZ7LtTdIvs8F9lveGjg)
+2. Go to Resources
+3. Download [VMware Workstation Pro](https://iacsd-devopsworkshop.slack.com/files/U08SEH6UMEX/F08T2HY0ZNV/vmware-workstation-full-17.6.3-24583834.exe)
+4. Install the `exe` file
 
 ---
 
-## 2️⃣ Download Ubuntu ISO
+## 2️⃣ Download ISO's to your machine
 
-1. Go to [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop)
-2. Choose the latest LTS version (e.g., Ubuntu 22.04 LTS)
-3. Save the ISO file to your computer
-
-![Step 3 - Ubuntu ISO Download](images/step3_ubuntu_iso.png)
+1. Download CentOS ISO from here -> [Download CentOS](https://drive.google.com/file/d/1p4hVBFFjUI8KfuaxKa6rIhiw0Z4G3aD7/view?usp=sharing)
 
 ---
 
-## 3️⃣ Create a New VM in VirtualBox
+## 3️⃣ Create a New VM in VMWare Workstation
 
-1. Open VirtualBox and click **New**
-2. Enter name: `Ubuntu-VM`
-3. Set Type: Linux | Version: Ubuntu (64-bit)
-4. Allocate Memory: **2048 MB**
-5. Create a Virtual Hard Disk → VDI → Dynamically Allocated → 20 GB
-
-![Step 4 - VM Settings](images/step4_vm_settings.png)
+1. Open VMware Workstation and click **Create a New Virtual Machine**
+2. Click **Next**
+3. Select `Installer Disc image file (iso)`
+4. Browse to your downloaded CentOS image
+5. Click **Next**
+6. In the next screen, give your details `Full Name`, `Username`, `Password`, `Confirm Password` and click **Next**
+7. In the next scree, choose the location where your VM will be deployed (Can leave default if there is enough space) and click **Next**
+8. In the disk size window, click **Store virtual machine as a single disk** and then click **Next**
+9. In the hardware scree, click on **Customize Hardware** button
+10. In the sub window, go to **Network Adapter** --> In the Network Connection sub window select **Bridged**
+11. Click on**Close**
+12. Finally click on **Finish**
 
 ---
 
-## 4️⃣ Mount Ubuntu ISO and Start Installation
+## 4️⃣ Installation will begin
 
-1. Go to Settings → Storage → Empty → Choose disk → Select the downloaded ISO
-2. Start the VM → Ubuntu Installer launches
-3. Follow on-screen instructions to install Ubuntu
+1. Follow on-screen instructions to install Centos
+2. Set up Disk
+3. Installation Type should **Minimal**
 4. Set up username, timezone, disk settings (defaults)
-
-![Step 5 - ISO Mount](images/step5_mount_iso.png)
-![Step 6 - Ubuntu Installer](images/step6_ubuntu_install.png)
 
 ---
 
 ## 5️⃣ Post-Installation Tasks
 
-1. Log in to Ubuntu
+1. Log in to CentOS Server
 2. Open Terminal and update:
    ```bash
-   sudo apt update && sudo apt upgrade -y
+   sudo yum update -y
    ```
-3. Take a snapshot in VirtualBox
-
-![Step 7 - Ubuntu Desktop](images/step7_ubuntu_desktop.png)
+3. Take a snapshot in VMWare Workstation
+  - Shutdown the Virtual Machine, using toolbar
+  - Wait for it to shutdown
+  - On the right side panel, right click on your server name and select **Snapshot --> Take Snapshot**
+  - On the Snapshot window, click on **Take Snapshot**
 
 ---
 
