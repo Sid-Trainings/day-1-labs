@@ -68,4 +68,4 @@ Set up a virtual machine using Oracle VirtualBox and install Ubuntu. This lab co
 ---
 
 ## ✅ Outcome
-You now have a working Ubuntu VM inside VirtualBox.
+You now have a working CentOS VM inside VirtualBox.
