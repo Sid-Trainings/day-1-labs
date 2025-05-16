@@ -17,7 +17,7 @@ Familiarize yourself with the Azure Portal interface and learn how to create a R
 1. Open a web browser and go to [https://portal.azure.com](https://portal.azure.com)
 2. Sign in using your Microsoft account
 
-![Step 1 - Azure Portal Login](images/lab2_step1_azure_login.png)
+
 
 ---
 
@@ -27,7 +27,6 @@ Familiarize yourself with the Azure Portal interface and learn how to create a R
 2. Pin frequently used services to the dashboard (like Virtual Machines, Storage Accounts)
 3. Use the search bar to quickly find services
 
-![Step 2 - Azure Dashboard Overview](images/lab2_step2_dashboard.png)
 
 ---
 
@@ -41,7 +40,6 @@ Familiarize yourself with the Azure Portal interface and learn how to create a R
    - **Region**: Choose your nearest data center (e.g., East US, West Europe)
 4. Click **Review + Create** → **Create**
 
-![Step 3 - Create Resource Group](images/lab2_step3_create_rg.png)
 
 ---
 
@@ -52,7 +50,6 @@ Familiarize yourself with the Azure Portal interface and learn how to create a R
 3. Note the **empty state** and buttons to add new resources
 4. Observe activity logs, tags, and access control (IAM)
 
-![Step 4 - Resource Group Details](images/lab2_step4_rg_details.png)
 
 ---
 
